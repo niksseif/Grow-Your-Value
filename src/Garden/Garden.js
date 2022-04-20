@@ -1,9 +1,9 @@
 import React from 'react';
 import dirt from '../assets/Dirt.png';
-import bud from '../assets/BUD.png';
-import rose from '../assets/ROSE 2.png';
-import sprout from '../assets/SPROUT.png';
-import stem from '../assets/STEM.png';
+import bud from '../assets/bud-final.png';
+import rose from '../assets/rose-final.png';
+import sprout from '../assets/sprout-final.png';
+import stem from '../assets/stem-final.png';
 import './Garden.css';
 
 
