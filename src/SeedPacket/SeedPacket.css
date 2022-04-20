@@ -1,0 +1,39 @@
+.container {
+    background-color: #6597ED;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+.container form {
+    background-color: beige;
+    border-radius: 15px;
+    width: 70%;
+    height: 33%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.oval {
+    background-color: bisque;
+    border-radius: 50%;
+    border-color: black;
+    border: 1px solid black;
+    height: 50%;
+    width: 25%;
+    margin: 10px auto ;
+}
+.submit-bttn {
+    background-color: #49DC04;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px; 
+    position: absolute;
+    bottom: 10%;
+    left : calc(50% - 150px );
+}
+input {
+    border-radius: 5px; 
+}

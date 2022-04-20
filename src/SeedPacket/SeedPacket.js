@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './SeedPacket.css'
 class SeedPacket extends Component{ 
   constructor() {
     super();
@@ -12,22 +12,22 @@ class SeedPacket extends Component{
     this.setState({name: e.target.value})
   }
   handleSubmit(e){
+    console.log(e,"<>>>eee")
     e.preventDefault();
     this.props.plantSeed(this.state.name)
+    this.setState({name: ""});
   }
   render(){
     return (
-      <>
-        <h1>SeedPacket</h1>
-        <div>
+      <div className='container'>
           <form onSubmit={(e) => this.handleSubmit(e) }>
+          <div className='oval'></div>
             <label htmlFor='seed-name'>
-              <input id="seed-name" type="text" onChange={(e) =>this.handleChange(e) }></input>
+              <input id="seed-name" type = "text" value = {this.state.name} onChange={(e) =>this.handleChange(e)} placeholder="Seed name"></input>
               </label>
-            <button>Submit</button> 
+              <button className='submit-bttn'>Submit</button> 
           </form>
-        </div>
-      </>
+      </div>
     )
 }
 }
