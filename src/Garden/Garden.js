@@ -24,8 +24,10 @@ const Garden = ({waterPlant, valueSeeds}) => {
       {timesWatered === 1 && <img src={stem} alt='drawing of stem'/>}
       {/* {timesWatered === 0 && <img src={dirt} alt='drawing of dirt'/>} */}
       {/* <img src={bud} alt='drawing of a flower bud'/> */}
+      <p>Ruminate on your value to help it grow!</p>
+      <button className='ruminate' onClick={() => waterPlant(id)}>Ruminate</button>
       </section>
-
+      
     </>
   )
 }
