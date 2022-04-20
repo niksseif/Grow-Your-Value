@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import seed from '../assets/seeds.png'
 import './SeedPacket.css'
+
+
 class SeedPacket extends Component{ 
   constructor() {
     super();
@@ -20,7 +23,7 @@ class SeedPacket extends Component{
     return (
       <div className='container'>
           <form onSubmit={(e) => this.handleSubmit(e) }>
-          <div className='oval'></div>
+          <img className="seed" src={seed} alt='drawing of rose'/>
             <label htmlFor='seed-name'>
               <input id="seed-name" type = "text" value = {this.state.name} onChange={(e) =>this.handleChange(e)} placeholder="Seed name"></input>
               </label>
