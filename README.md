@@ -4,6 +4,11 @@
 **Grow Your Value** is a application that gives users time and space to reflect on their values and see those values grow. Inspired by [research](https://www.psychologytoday.com/us/blog/nudging-ahead/201802/using-self-affirmation-support-struggling-students) that indicates that struggling students can gain confidence and handle threats (like high-stakes assessments) more comfortablly by practicing a value affirmation exercise, **Grow Your Value** is here to help you remember what is important to you, so you can meet your challenges head on!
 
 
+
+https://user-images.githubusercontent.com/26471447/164329585-7d6981dd-678a-4509-9282-b7a464fc4586.mp4
+
+
+
 ## Set Up
 
 #### View the deployed app 
