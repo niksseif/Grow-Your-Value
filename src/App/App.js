@@ -12,6 +12,10 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    this.retreiveFromStorage()
+  }
+
   // use this in SeedPacket to add a new valueSeed to state
   // Assumes that SeedPacket will call this method, passing in an object with relevant seed data
   plantSeed = (name) => { 
@@ -39,13 +43,17 @@ export default class App extends Component {
 
   saveToStorage = () => {
     // MVP: only saving one plant
-    localStorage.setItem("plant",JSON.stringify(this.state.valueSeeds[0]));
+    localStorage.setItem("plant",JSON.stringify(this.state.valueSeeds[this.state.valueSeeds.length - 1]));
   }
 
   retreiveFromStorage = () => {
     // MVP: only setting 1 plant!
     const currentPlant = localStorage.getItem("plant");
-    this.setState({ valueSeeds: [currentPlant] });
+    console.log(currentPlant)
+    if (currentPlant) {
+      const parsedPlant = JSON.parse(currentPlant)
+      this.setState({ valueSeeds: [parsedPlant] });
+    }
   }
 
   render() {
