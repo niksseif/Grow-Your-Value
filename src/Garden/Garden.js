@@ -1,8 +1,8 @@
 import React from 'react';
-import bud from '../assets/BUD.png'
-// import rose from '../../assets/ROSE 2.png'
-// import sprout from '../../assets/SPROUT.png'
-// import stem from '../../assets/STEM.png'
+import bud from '../assets/BUD.png';
+import rose from '../assets/ROSE 2.png';
+import sprout from '../assets/SPROUT.png';
+import stem from '../assets/STEM.png';
 
 
 const Garden = ({waterPlant, valueSeeds}) => {
@@ -18,7 +18,12 @@ const Garden = ({waterPlant, valueSeeds}) => {
     <>
       <section>
       <h2>{name}</h2>
-      <img src={bud} alt='drawing of a flower bud'/>
+      {timesWatered === 4 && <img src={rose} alt='drawing of rose'/>}
+      {timesWatered === 3 && <img src={bud} alt='drawing of bud'/>}
+      {timesWatered === 2 && <img src={sprout} alt='drawing of sprout'/>}
+      {timesWatered === 1 && <img src={stem} alt='drawing of stem'/>}
+      {/* {timesWatered === 0 && <img src={dirt} alt='drawing of dirt'/>} */}
+      {/* <img src={bud} alt='drawing of a flower bud'/> */}
       </section>
 
     </>
