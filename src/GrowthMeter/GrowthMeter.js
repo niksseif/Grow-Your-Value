@@ -3,7 +3,6 @@ import './GrowthMeter.css'
 
 
 const GrowthMeter = ({valueSeeds}) => {
-      console.log(valueSeeds,"<>>>>value")
         return (
          <>      
             <div className="container-list">
