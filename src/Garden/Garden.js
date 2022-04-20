@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default Garden = () => {
+const Garden = () => {
   return (
     <>
       <h1>Garden</h1>
     </>
   )
 }
+
+export default Garden;
