@@ -14,9 +14,13 @@ export default class App extends Component {
 
   // use this in SeedPacket to add a new valueSeed to state
   // Assumes that SeedPacket will call this method, passing in an object with relevant seed data
-  plantSeed = (newSeed) => {
-    newSeed.id = Date.now();
-    this.setState({ valueSeeds: [...this.state.valueSeeds, newSeed] });
+  plantSeed = (name) => { 
+    let newSeed = {
+      id: Date.now(),
+      name,
+      timesWatered: 0
+    }
+    this.setState({ valueSeeds: [ ...this.state.valueSeeds, newSeed ]}, this.saveToStorage);
   }
 
   // use this in Garden >> Flower to update how many times the flower has been watered
@@ -36,7 +40,7 @@ export default class App extends Component {
 
   saveToStorage = () => {
     // MVP: only saving one plant
-    localStorage.setItem("plant", this.state.valueSeeds[0]);
+    localStorage.setItem("plant",JSON.stringify(this.state.valueSeeds[0]));
   }
 
   retreiveFromStorage = () => {
