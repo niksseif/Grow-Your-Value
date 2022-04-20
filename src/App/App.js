@@ -21,11 +21,15 @@ export default class App extends Component {
 
   // use this in Garden >> Flower to update how many times the flower has been watered
   waterPlant = (id) => {
-    this.state.valueSeeds.forEach(plant => {
+    const updatedPlants = this.state.valueSeeds.map(plant => {
       if (plant.id === id && plant.timesWatered < 4) {
-        plant.timesWatered += 1;
+        const {id, name, timesWatered} = plant
+        const newCount = plant.timesWatered += 1; 
+        return {id, name, timesWatered: newCount}
       }
     })
+    console.log(updatedPlants)
+    this.setState({valueSeeds: updatedPlants})
   }
 
   saveToStorage = () => {
