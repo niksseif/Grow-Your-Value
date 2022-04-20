@@ -26,6 +26,8 @@ export default class App extends Component {
         const {id, name, timesWatered} = plant
         const newCount = plant.timesWatered += 1; 
         return {id, name, timesWatered: newCount}
+      } else {
+        return plant
       }
     })
     console.log(updatedPlants)

@@ -28,7 +28,7 @@ const Garden = ({waterPlant, valueSeeds}) => {
           {/* <img src={bud} alt='drawing of a flower bud'/> */}
           <h2>{name}</h2>
           <p>Ruminate on your value to help it grow!</p>
-          <button onClick={() => waterPlant(id)}></button>
+          <button onClick={() => waterPlant(id)}>Ruminate!</button>
         </div>
       </section>
       </section>
