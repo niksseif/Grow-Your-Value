@@ -1,0 +1,36 @@
+.garden {
+  height: 100vh;
+  background: linear-gradient(cornflowerblue, rgb(135, 178, 235), rgb(170, 216, 246), rgb(228, 240, 253), rgb(231, 249, 255), azure, azure, azure, azure, #723927, #844a36, #844a36, #844a36, #844a36);
+  display: grid;
+  grid-template-rows: 4fr .5fr;
+}
+
+.plant-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plant {
+  align-self: flex-end;
+}
+
+.plant h2 {
+  color: white;
+}
+
+.soil {
+  background: #844a36;
+}
+
+.stem,
+.sprout,
+.bud,
+.rose,
+.dirt {
+  width: 400px;
+}
+
+.stem {
+  width: 150px;
+  height: 80%;
+}

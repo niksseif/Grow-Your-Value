@@ -8,7 +8,7 @@ export default class App extends Component {
     super();
     this.state = {
       // {id: id, name: 'value', timesWatered: 0}
-      valueSeeds: [] 
+      valueSeeds: [{id:1, name: 'sincerity', timesWatered: 0}]
     }
   }
 
@@ -21,16 +21,21 @@ export default class App extends Component {
       timesWatered: 0
     }
     this.setState({ valueSeeds: [ ...this.state.valueSeeds, newSeed ]}, this.saveToStorage);
-
   }
 
   // use this in Garden >> Flower to update how many times the flower has been watered
   waterPlant = (id) => {
-    this.state.valueSeeds.forEach(plant => {
+    const updatedPlants = this.state.valueSeeds.map(plant => {
       if (plant.id === id && plant.timesWatered < 4) {
-        plant.timesWatered += 1;
+        const {id, name, timesWatered} = plant
+        const newCount = plant.timesWatered += 1; 
+        return {id, name, timesWatered: newCount}
+      } else {
+        return plant
       }
     })
+    console.log(updatedPlants)
+    this.setState({valueSeeds: updatedPlants})
   }
 
   saveToStorage = () => {
@@ -47,8 +52,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <SeedPacket plantSeed = {this.plantSeed} />
-        <Garden waterPlant = {this.waterPlant} />
+        <SeedPacket plantSeed={this.plantSeed} />
+        <Garden waterPlant={this.waterPlant} valueSeeds={this.state.valueSeeds} />
       </div>
     );
   }
