@@ -12,7 +12,6 @@ class SeedPacket extends Component{
     this.setState({name: e.target.value})
   }
   handleSubmit(e){
-    console.log(e,"<>>>eee")
     e.preventDefault();
     this.props.plantSeed(this.state.name)
     this.setState({name: ""});
