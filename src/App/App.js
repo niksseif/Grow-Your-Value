@@ -8,7 +8,7 @@ export default class App extends Component {
     super();
     this.state = {
       // {id: id, name: 'value', timesWatered: 0}
-      valueSeeds: [{id:1, name: 'sincerity', timesWatered: 1}]
+      valueSeeds: [{id:1, name: 'sincerity', timesWatered: 0}]
     }
   }
 
