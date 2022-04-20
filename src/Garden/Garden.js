@@ -20,10 +20,10 @@ const Garden = ({waterPlant, valueSeeds}) => {
     <section className="garden">
       <section className="plant-section">
         <div className="plant">
-          {timesWatered === 4 && <img className="rose" src={rose} alt='drawing of rose'/>}
-          {timesWatered === 3 && <img className="bud" src={bud} alt='drawing of bud'/>}
-          {timesWatered === 2 && <img className="sprout" src={sprout} alt='drawing of sprout'/>}
-          {timesWatered === 1 && <img className="stem" src={stem} alt='drawing of stem'/>}
+          {timesWatered === 4 && <img className="rose fade-in" src={rose} alt='drawing of rose'/>}
+          {timesWatered === 3 && <img className="bud fade-in" src={bud} alt='drawing of bud'/>}
+          {timesWatered === 2 && <img className="sprout fade-in" src={sprout} alt='drawing of sprout'/>}
+          {timesWatered === 1 && <img className="stem fade-in" src={stem} alt='drawing of stem'/>}
           {timesWatered === 0 && <img className="dirt" src={dirt} alt='drawing of dirt'/>}
           {/* <img src={bud} alt='drawing of a flower bud'/> */}
           <h2>{name}</h2>

@@ -16,15 +16,6 @@
     justify-content: space-around;
 
 }
-.oval {
-    background-color: bisque;
-    border-radius: 50%;
-    border-color: black;
-    border: 1px solid black;
-    height: 50%;
-    width: 25%;
-    margin: 10px auto ;
-}
 .submit-bttn {
     background-color: #49DC04;
     width: 300px;
@@ -36,4 +27,9 @@
 }
 input {
     border-radius: 5px; 
+}
+
+.seed {
+    width: 180px;
+    margin: 0 auto;
 }
