@@ -54,7 +54,7 @@ export default class App extends Component {
       <div className="App">
         <SeedPacket plantSeed={this.plantSeed} />
         <Garden waterPlant={this.waterPlant} valueSeeds={this.state.valueSeeds} />
-        <GrowthMeter/>
+        <GrowthMeter valueSeeds={this.state.valueSeeds}/>
       </div>
     );
   }

@@ -1,0 +1,6 @@
+.container-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+}
