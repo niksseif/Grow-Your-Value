@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default Garden = () => {
-  return {
+  return (
     <>
       <h1>Garden</h1>
     </>
-  }
+  )
 }

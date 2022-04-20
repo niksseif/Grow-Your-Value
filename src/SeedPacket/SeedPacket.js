@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default SeedPacket = () => {
-  return {
+  return (
     <>
       <h1>SeedPacket</h1>
     </>
-  }
+  )
 }

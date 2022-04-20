@@ -1,5 +1,5 @@
-import Garden from './Garden/Garden.js';
-import SeedPacket from './SeedPacket/SeedPacket.js';
+import Garden from '../Garden/Garden.js';
+import SeedPacket from '../SeedPacket/SeedPacket.js';
 import './App.css';
 
 function App() {
