@@ -8,15 +8,15 @@ export default class App extends Component {
     super();
     this.state = {
       // {id: id, name: 'value', timesWatered: 0}
-      valueSeeds: [] 
+      valueSeeds: [{id:1, name: 'sincerity', timesWatered: 0}]
     }
   }
 
   // use this in SeedPacket to add a new valueSeed to state
   // Assumes that SeedPacket will call this method, passing in an object with relevant seed data
-  plantSeed = (newSeed) => { 
+  plantSeed = (newSeed) => {
     newSeed.id = Date.now();
-    this.setState({ valueSeeds: [ ...this.state.valueSeeds, newSeed ]});
+    this.setState({ valueSeeds: [...this.state.valueSeeds, newSeed] });
   }
 
   // use this in Garden >> Flower to update how many times the flower has been watered
@@ -42,8 +42,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <SeedPacket plantSeed = {this.plantSeed} />
-        <Garden waterPlant = {this.waterPlant} />
+        <SeedPacket plantSeed={this.plantSeed} />
+        <Garden waterPlant={this.waterPlant} valueSeeds={this.state.valueSeeds} />
       </div>
     );
   }
