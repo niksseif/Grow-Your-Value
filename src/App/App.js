@@ -34,7 +34,6 @@ export default class App extends Component {
         return plant
       }
     })
-    console.log(updatedPlants)
     this.setState({valueSeeds: updatedPlants})
   }
 

@@ -8,7 +8,7 @@ import './Garden.css';
 
 
 const Garden = ({waterPlant, valueSeeds}) => {
-  const {id, name, timesWatered} = valueSeeds[0];
+  const {id, name, timesWatered} = valueSeeds[valueSeeds.length-1];
 
 // if timesWatered is 0 - mound of earth
     // 1 = stem

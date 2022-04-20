@@ -16,6 +16,7 @@
 
 .plant h2 {
   color: white;
+  text-transform: capitalize;
 }
 
 .soil {
