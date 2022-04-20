@@ -3,6 +3,7 @@ import bud from '../assets/BUD.png';
 import rose from '../assets/ROSE 2.png';
 import sprout from '../assets/SPROUT.png';
 import stem from '../assets/STEM.png';
+import './Garden.css';
 
 
 const Garden = ({waterPlant, valueSeeds}) => {
