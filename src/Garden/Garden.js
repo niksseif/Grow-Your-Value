@@ -1,4 +1,5 @@
 import React from 'react';
+import dirt from '../assets/Dirt.png';
 import bud from '../assets/BUD.png';
 import rose from '../assets/ROSE 2.png';
 import sprout from '../assets/SPROUT.png';
@@ -19,13 +20,13 @@ const Garden = ({waterPlant, valueSeeds}) => {
     <section className="garden">
       <section className="plant-section">
         <div className="plant">
-          <h2>{name}</h2>
           {timesWatered === 4 && <img className="rose" src={rose} alt='drawing of rose'/>}
           {timesWatered === 3 && <img className="bud" src={bud} alt='drawing of bud'/>}
           {timesWatered === 2 && <img className="sprout" src={sprout} alt='drawing of sprout'/>}
           {timesWatered === 1 && <img className="stem" src={stem} alt='drawing of stem'/>}
-          {/* {timesWatered === 0 && <img src={dirt} alt='drawing of dirt'/>} */}
+          {timesWatered === 0 && <img className="dirt" src={dirt} alt='drawing of dirt'/>}
           {/* <img src={bud} alt='drawing of a flower bud'/> */}
+          <h2>{name}</h2>
         </div>
       </section>
       <div className="soil" />
