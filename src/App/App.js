@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Garden from '../Garden/Garden.js';
 import SeedPacket from '../SeedPacket/SeedPacket.js';
+import GrowthMeter from '../GrowthMeter/GrowthMeter.js';
 import './App.css';
 
 export default class App extends Component {
@@ -61,6 +62,7 @@ export default class App extends Component {
       <div className="App">
         <SeedPacket plantSeed={this.plantSeed} />
         <Garden waterPlant={this.waterPlant} valueSeeds={this.state.valueSeeds} />
+        <GrowthMeter valueSeeds={this.state.valueSeeds}/>
       </div>
     );
   }
